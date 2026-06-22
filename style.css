@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: var(--preto);
+    background-color: var(--cinza-escuro);
     color: var(--cinza-claro);
 }
 
@@ -47,7 +47,7 @@ nav a:hover {
 
 button {
     transition: 0.2s;
-    background-color: var(--cinza-escuro);
+    background-color: var(--preto);
     color: var(--cinza-claro);
     border: none;
     padding: 20px 30px;
@@ -61,4 +61,11 @@ button:hover {
     background-color: var(--cinza-claro);
     color: var(--preto);
     transform: scale(1.1);
+}
+
+footer {
+    background-color: var(--preto);
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
 }

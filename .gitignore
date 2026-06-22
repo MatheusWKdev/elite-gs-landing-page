@@ -1,9 +1,5 @@
-# VS Code
-.vscode/
 
-# Sistema Windows
+.vscode/
 Thumbs.db
 Desktop.ini
-
-# macOS
 .DS_Store
