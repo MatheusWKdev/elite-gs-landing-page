@@ -5,67 +5,108 @@
     --branco: #ffffff;
 }
 
+
 body {
+    margin: 0; 
     background-color: var(--cinza-escuro);
     color: var(--cinza-claro);
 }
 
+
 header {
-    background-color: var(--preto);
-    padding-left: 50px;
+    background-color: var(--cinza-escuro);
+    padding-left: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+
 nav {
-    background-color: var(--preto);
+    background-color: var(--cinza-escuro);
     display: flex;
-    padding-right: 50px;
-    gap: 30px;
+    padding-right: 25px;
+    gap: 25px;
 }
 nav a {
     color: var(--cinza-claro);
     text-decoration: none;
     transition: 0.3s;
 }
-
 nav a:hover {
     color: var(--branco);
     text-decoration: underline;
 }
 
+
 .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 150px;
+    padding-left: 120px;
+
+    min-height: 76vh;
+}
+.hero h1 {
+    color: var(--branco);
+    gap: 2px;
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+.hero h2 {
+    color: var(--cinza-claro);
+    font-size: 23px;
+    margin-bottom: 0px;
+}
+
+
+.hero-button-1 {
+    transition: 0.2s;
+    background-color: var(--branco);
+    color: var(--preto);
+    border: none;
+    padding: 20px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.hero-button-1:hover {
+    transform: scale(1.1);
+}
+.hero-button-2 {
+    transition: 0.2s;
+    background-color: transparent;
+    color: var(--branco);
+    border: 2px solid var(--branco);
+    padding: 20px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.hero-button-2:hover {
+    transform: scale(1.1);
+}
+.hero-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    gap: 20px;
+}
+
+footer {
+    background-color: var(--cinza-escuro);
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.sobre {
+    background-color: var(--cinza-claro);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    min-height: 90vh;
-    text-align: center;
-}
-
-button {
-    transition: 0.2s;
-    background-color: var(--preto);
-    color: var(--cinza-claro);
-    border: none;
-    padding: 20px 30px;
-    cursor: pointer;
-    font-size: 25px;
-    border-radius: 10px;
-    margin-top: 100px;
-}
-
-button:hover {
-    background-color: var(--cinza-claro);
-    color: var(--preto);
-    transform: scale(1.1);
-}
-
-footer {
-    background-color: var(--preto);
-    text-align: center;
-    padding: 10px;
-    margin-top: 50px;
+    padding: 250px 150px;
 }
