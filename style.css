@@ -5,6 +5,10 @@
     --branco: #ffffff;
 }
 
+.logo img {
+    height: 100px;
+    width: auto;
+}
 
 body {
     margin: 0; 
@@ -159,4 +163,29 @@ footer {
     max-width: 300px;
     line-height: 1.6;
     margin: 0 auto;
+}
+
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px;
+    gap:140px;
+}
+
+.texto-sobre {
+    display: flex;
+    text-align: center;
+    padding-top: 35px;
+    justify-content: flex-end;
+    font-size: 26px;
+    line-height: 1.5;
+    border-top: 3px solid var(--cinza-claro);
+    border-bottom: 3px solid var(--cinza-claro);
+    padding: 30px;
+}
+
+.sobre-logo img {
+    max-width: 350px;
 }
