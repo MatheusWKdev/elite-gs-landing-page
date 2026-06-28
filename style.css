@@ -1,6 +1,6 @@
 :root {
     --preto: #000000;
-    --cinza-escuro: #222222;
+    --cinza-escuro: #141414;
     --cinza-claro: #f5f5f5bb;
     --branco: #ffffff;
 }
@@ -117,7 +117,7 @@ footer {
 
 .diferenciais {
     background-color: var(--cinza-claro);
-    padding: 10px 150px;
+    padding: 80px 120px;
 }
 
 .diferenciais-titulo {
@@ -170,8 +170,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 150px;
-    gap:140px;
+    padding: 100px 120px;
+    gap:90px;
 }
 
 .texto-sobre {
@@ -188,4 +188,97 @@ footer {
 
 .sobre-logo img {
     max-width: 350px;
+}
+
+.contato {
+    background-color: var(--cinza-claro);
+    padding: 90px 150px;
+}
+
+.contato-cards {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.contato-card {
+    width: 300px;
+    padding: 30px;
+
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.contato-card:hover {
+    transform: translateY(-8px);
+    background-color: #2d2d2d
+}
+
+.contato-card-whatsapp {
+    color: var(--branco);
+    background-color: var(--cinza-escuro);
+
+    border-radius: 10px;
+
+    transition: .3s;
+}
+.contato-card-instagram {
+    color: var(--branco);
+    background-color: var(--cinza-escuro);
+
+    border-radius: 10px;
+
+    transition: .3s;
+}
+
+.contato-card img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.contato-card h3 {
+    margin: 15px 0 10px;
+    font-size: 26px;
+}
+
+.contato-card p {
+    margin: 0;
+    margin-top:18px;
+    font-size:18px;
+    font-weight:600;
+}
+
+.titulo-contato {
+    text-align: center;
+    font-size: 45px;
+    color: #141414;
+    margin-bottom: 1px;
+}
+
+.subtitulo-contato {
+    text-align: center;
+    color: #2d2d2d;
+    font-size: 20px;
+    margin-bottom: 50px;
+
+}
+
+.titulo-contato::before{
+    content:"";
+    display:block;
+    width:100px;
+    height:3px;
+    background:#141414;
+    margin:0 auto 20px;
+}
+
+
+.contato-card p:last-child{
+    transition:.3s;
+}
+.contato-card:hover p:last-child{
+    transform:translateX(5px);
 }
