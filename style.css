@@ -181,8 +181,8 @@ footer {
     justify-content: flex-end;
     font-size: 26px;
     line-height: 1.5;
-    border-top: 3px solid var(--cinza-claro);
-    border-bottom: 3px solid var(--cinza-claro);
+    border: 2px solid #3a3838;
+    border-radius: 12px;
     padding: 30px;
 }
 
@@ -213,7 +213,7 @@ footer {
 
 .contato-card:hover {
     transform: translateY(-8px);
-    background-color: #2d2d2d
+    background-color: #202020
 }
 
 .contato-card-whatsapp {
@@ -254,13 +254,13 @@ footer {
 .titulo-contato {
     text-align: center;
     font-size: 45px;
-    color: #141414;
+    color: var(--cinza-escuro);
     margin-bottom: 1px;
 }
 
 .subtitulo-contato {
     text-align: center;
-    color: #2d2d2d;
+    color: var(--cinza-escuro);
     font-size: 20px;
     margin-bottom: 50px;
 
@@ -281,4 +281,120 @@ footer {
 }
 .contato-card:hover p:last-child{
     transform:translateX(5px);
+}
+
+
+.localizacao {
+    background: var(--cinza-escuro);
+    padding: 120px 0;
+}
+
+.localizacao-container {
+    max-width: 1450px;
+    margin-left: 120px;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+
+.info-localizacao {
+    width: 390px;
+    flex-shrink: 0;
+}
+
+.info-localizacao h3 {
+    color: #b3b3b3;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin: 100 0 8px 0;
+}
+
+.info-localizacao h2 {
+    color: var(--branco);
+    font-size: 64px;
+    line-height: 0.9;
+    white-space: nowrap;
+    margin: 0 0 28px 0;
+}
+
+.info-localizacao > p {
+    color: var(--cinza-claro);
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.endereco {
+    width: 100%;
+    background-color: #1d1d1d;
+    padding: 34px;
+    border-radius: 16px;
+    border: 2px solid #3a3838;
+    margin-bottom: 25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.endereco h4 {
+    margin-top: 1px;
+}
+.endereco h4,
+.horario h4 {
+    color: var(--branco);
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+.endereco p,
+.horario p {
+    color: var(--cinza-claro);
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.horario {
+    border-top: 2px solid #3a3838;
+    border-bottom: 2px solid #3a3838;
+
+
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+.botao-localizacao {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 60px;
+    line-height: 24px;
+    margin-top: 30px;
+    background-color: var(--branco);
+    color: var(--preto);
+    text-align: center;
+    text-decoration: none;
+    padding: 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: .3s;
+
+}
+
+.botao-localizacao:hover {
+    transform: translateY(-3px);
+    background-color: #e8e8e8;
+}
+
+.mapa-container img {
+    width: 850px;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.mapa-container {
+    width: 740px;
+    margin-top: 150px;
 }
