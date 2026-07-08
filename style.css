@@ -826,6 +826,368 @@ footer {
    RESPONSIVIDADE - CELULAR GRANDE (480px)
 ========================================================= */
 
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        padding: 12px 18px;
+        gap: 10px;
+    }
+
+    .logo img {
+        height: 70px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero {
+        padding-top: 70px;
+        padding-left: 24px;
+        padding-right: 24px;
+        min-height: 62vh;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        width: 100%;
+        margin-top: 36px;
+    }
+
+    .hero-button-1,
+    .hero-button-2 {
+        width: 100%;
+        text-align: center;
+        padding: 17px 20px;
+        font-size: 18px;
+    }
+
+    .diferenciais {
+        padding: 52px 24px;
+        border-radius: 22px;
+    }
+
+    .diferenciais-titulo {
+        font-size: 34px;
+        margin-bottom: 34px;
+    }
+
+    .cards {
+        gap: 24px;
+    }
+
+    .card {
+        padding: 32px 22px;
+    }
+
+    .card h2 {
+        font-size: 24px;
+    }
+
+    .sobre {
+        padding: 60px 24px;
+        gap: 24px;
+    }
+
+    .sobre-logo img {
+        max-width: 210px;
+    }
+
+    .texto-sobre {
+        font-size: 19px;
+        padding: 22px;
+    }
+
+    .contato {
+        padding: 60px 24px;
+        border-radius: 22px;
+    }
+
+    .titulo-contato {
+        font-size: 32px;
+    }
+
+    .subtitulo-contato {
+        font-size: 18px;
+        margin-bottom: 34px;
+    }
+
+    .contato-card {
+        max-width: 100%;
+        padding: 34px 24px;
+    }
+
+    .localizacao {
+        padding: 70px 24px;
+    }
+
+    .localizacao-container {
+        gap: 28px;
+    }
+
+    .info-localizacao h2 {
+        font-size: 36px;
+    }
+
+    .endereco {
+        padding: 22px;
+    }
+
+    .mapa-container iframe {
+        height: 340px;
+    }
+}
+
+/* =========================================================
+   RESPONSIVIDADE - CELULAR MÉDIO (375px)
+========================================================= */
+
+@media (max-width: 375px) {
+    header {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .hero {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero h2 {
+        font-size: 17px;
+    }
+
+    .hero-button-1,
+    .hero-button-2 {
+        font-size: 17px;
+        padding: 16px 18px;
+    }
+
+    .diferenciais {
+        padding: 48px 20px;
+    }
+
+    .diferenciais-titulo {
+        font-size: 30px;
+    }
+
+    .card {
+        padding: 30px 20px;
+    }
+
+    .card h2 {
+        font-size: 22px;
+    }
+
+    .sobre {
+        padding: 56px 20px;
+    }
+
+    .texto-sobre {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .contato {
+        padding: 56px 20px;
+    }
+
+    .titulo-contato {
+        font-size: 29px;
+    }
+
+    .contato-card {
+        padding: 32px 20px;
+    }
+
+    .localizacao {
+        padding: 64px 20px;
+    }
+
+    .info-localizacao h2 {
+        font-size: 32px;
+    }
+
+    .endereco h4,
+    .horario h4 {
+        font-size: 20px;
+    }
+
+    .endereco p,
+    .horario p {
+        font-size: 17px;
+    }
+
+    .mapa-container iframe {
+        height: 320px;
+    }
+}
+
 /* =========================================================
    RESPONSIVIDADE - CELULAR PEQUENO (320px)
 ========================================================= */
+
+@media (max-width: 320px) {
+    header {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .logo img {
+        height: 62px;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding-top: 58px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero h2 {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        margin-top: 30px;
+        gap: 12px;
+    }
+
+    .hero-button-1,
+    .hero-button-2 {
+        font-size: 16px;
+        padding: 15px 14px;
+    }
+
+    .diferenciais {
+        padding: 42px 16px;
+        border-radius: 18px;
+    }
+
+    .diferenciais-titulo {
+        font-size: 27px;
+    }
+
+    .card {
+        padding: 28px 16px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .sobre {
+        padding: 50px 16px;
+    }
+
+    .sobre-logo img {
+        max-width: 190px;
+    }
+
+    .texto-sobre {
+        font-size: 17px;
+        padding: 18px;
+    }
+
+    .contato {
+        padding: 50px 16px;
+        border-radius: 18px;
+    }
+
+    .titulo-contato {
+        font-size: 26px;
+    }
+
+    .subtitulo-contato {
+        font-size: 16px;
+    }
+
+    .contato-card {
+        padding: 30px 16px;
+    }
+
+    .contato-card h3 {
+        font-size: 26px;
+    }
+
+    .contato-card p {
+        font-size: 16px;
+        overflow-wrap: anywhere;
+    }
+
+    .localizacao {
+        padding: 56px 16px;
+    }
+
+    .localizacao-container {
+        gap: 24px;
+    }
+
+    .info-localizacao h3 {
+        font-size: 18px;
+    }
+
+    .info-localizacao h2 {
+        font-size: 29px;
+    }
+
+    .info-localizacao > p {
+        font-size: 18px;
+    }
+
+    .endereco {
+        padding: 18px;
+    }
+
+    .endereco h4,
+    .horario h4 {
+        font-size: 18px;
+    }
+
+    .endereco p,
+    .horario p {
+        font-size: 16px;
+    }
+
+    .mapa-container iframe {
+        height: 300px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
