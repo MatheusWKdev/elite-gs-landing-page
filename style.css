@@ -507,14 +507,16 @@ nav a:hover::after{
         inset 0 1px 0 rgba(255,255,255,.03);
 }
 
-.endereco h4 {
+.endereco .titulo-info {
     margin-top: 1px;
 }
 
-.endereco h4,
-.horario h4 {
+.endereco .titulo-info,
+.horario .titulo-info {
     color: var(--branco);
     font-size: 22px;
+    font-weight: bold;
+    line-height: normal;
 
     margin-bottom: 15px;
 }
@@ -1030,8 +1032,8 @@ footer {
         font-size: 32px;
     }
 
-    .endereco h4,
-    .horario h4 {
+    .endereco .titulo-info,
+    .horario .titulo-info {
         font-size: 20px;
     }
 
@@ -1173,8 +1175,8 @@ footer {
         padding: 18px;
     }
 
-    .endereco h4,
-    .horario h4 {
+    .endereco .titulo-info,
+    .horario .titulo-info {
         font-size: 18px;
     }
 
