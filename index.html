@@ -7,15 +7,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Elite GS">
+    <meta property="og:description" content="Moda masculina em Quitandinha.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="img/upscalemedia-transformed (1).png" alt="Logo Elite GS">
+            <img src="img/upscalemedia-transformed-_1_.webp" alt="Logo Elite GS">
         </div>
 
         <nav>
-            <a href="#hero">Home</a>
+            <a href="#diferenciais">Diferenciais</a>
             <a href="#sobre">Sobre</a>
             <a href="#contato">Contato</a>
             <a href="#localizacao">Localização</a>
@@ -23,13 +28,12 @@
     </header>
 
     <main>
-        <section
-            id="hero" class="hero">
+        <section id="hero" class="hero">
             <h1>O MELHOR DA<br>MODA MASCULINA!</h1>
             <h2>Encontre as melhores opções<br>da moda masculina em um só lugar.</h2>
             <div class ="hero-buttons">
-                <button class = "hero-button-1">Conheça a ELITE GS ></button>
-                <button class = "hero-button-2">Entre em Contato > </button>
+                <a class = "hero-button-1" href="#sobre">Conheça a ELITE GS →</a>
+                <a class = "hero-button-2" href="#contato">Entre em Contato →</a>
             </div>
         </section>
         <section id="diferenciais" class ="diferenciais">
@@ -58,7 +62,7 @@
         </section>
         <section id="sobre" class="sobre">
             <div class="sobre-logo">
-                <img src="img/upscalemedia-transformed (1).png">
+                <img src="img/upscalemedia-transformed-_1_.webp" loading="lazy">
             </div>
             <p class="texto-sobre">
                 A Elite GS nasceu com o objetivo de reunir peças que unem qualidade,<br>
@@ -77,14 +81,14 @@
             </h3>
             <div class="contato-cards">
 
-            <a href="https://wa.me/5541984096278" class="contato-card contato-card-whatsapp">
+            <a href="https://wa.me/5541984096278" class="contato-card contato-card-whatsapp" target="_blank" rel="noopener noreferrer">
                 <img src="img/whatsapp.svg" alt="WhatsApp">
                 <h3>WhatsApp</h3>
                 <p>(41) 98409-6278</p>
                 <p>Conversar no WhatsApp →</p>
             </a>
 
-            <a href="https://instagram.com/elitegsmodamasculina" class="contato-card contato-card-instagram">
+            <a href="https://instagram.com/elitegsmodamasculina" class="contato-card contato-card-instagram" target="_blank" rel="noopener noreferrer">
                 <img src="img/instagram.svg" alt="Instagram">
                 <h3>Instagram</h3>
                 <p>@elitegsmodamasculina</p>
@@ -124,18 +128,17 @@
                     <p>Sábado: 09h às 18h</p>
                 </div>
 
-                <a href="https://www.google.com/maps/place/ELITE+GS/@-25.8702601,-49.5012581,17z/data=!3m1!4b1!4m6!3m5!1s0x94ddaf002f82cf03:0xb560db21edfcf0d!8m2!3d-25.8702601!4d-49.5012581!16s%2Fg%2F11y6b3rvb_?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D"
-                   target="_blank"
-                   class="botao-localizacao">
-                    ABRIR NO GOOGLE MAPS →
-                </a>
-
             </div>
 
         </div>
 
         <div class="mapa-container">
-            <img src="img/Captura de tela 2026-07-01 180121.png" alt="Mapa da localização da loja">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.976218604713!2d-49.5012581!3d-25.8702601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ddaf002f82cf03%3A0xb560db21edfcf0d!2sELITE%20GS!5e0!3m2!1spt-BR!2sbr!4v1783198092846!5m2!1spt-BR!2sbr"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
         </div>
 
     </div>
@@ -145,7 +148,13 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 ELITE GS. Todos os direitos reservados.</p>
+        <p>
+        © <span id="ano"></span> ELITE GS. Todos os direitos reservados.
+        </p>
+
+        <script>
+        document.getElementById("ano").textContent = new Date().getFullYear();
+        </script>
     </footer>
 </body>
 </html>
